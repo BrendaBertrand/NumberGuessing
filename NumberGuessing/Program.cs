@@ -39,6 +39,7 @@ class Program
 
                     break;
                 }
+
                 if (Math.Abs(userGuess - magicNumber) <= 5)
                 {
                     Console.WriteLine("You're close!");
@@ -54,7 +55,6 @@ class Program
                     {
                         Console.WriteLine("Your number is too low! ");
                     }
-                   
                 }
             }
 
