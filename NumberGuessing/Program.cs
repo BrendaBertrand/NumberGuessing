@@ -5,6 +5,7 @@ class Program
     const int MIN_VALUE = 0;
     const int MAX_VALUE = 100;
     const int MAX_ATTEMPTS = 5;
+    const int CLOSE_NUMBER = 5;
 
     static void Main(string[] args)
     {
@@ -40,7 +41,7 @@ class Program
                     break;
                 }
 
-                if (Math.Abs(userGuess - magicNumber) <= 5)
+                if (Math.Abs(userGuess - magicNumber) <= CLOSE_NUMBER)
                 {
                     Console.WriteLine("You're close!");
                 }
